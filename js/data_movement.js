@@ -68,7 +68,7 @@ data_movement = [
     {
         title: "High jump",
         icon: "wingfoot",
-        subtitle: "Cost: 5ft per 5ft",
+        subtitle: "Cost: 5ft per 5ft, Dist: 3 + Str mod",
         description: "Movement cost: 5ft per 5ft jumped",
         
         reference: "PHB, pg. 182.",
@@ -80,9 +80,9 @@ data_movement = [
         ]
     },
     {
-        title: "Long jump",
+        title: "Standing Long jump",
         icon: "wingfoot",
-        subtitle: "Cost: 5ft per 5ft",
+        subtitle: "Cost: 5ft per 5ft, Dist: 1/2 Str",
         description: "Movement cost: 5ft per 5ft jumped",
         reference: "PHB, pg. 182.",
         bullets: [
@@ -119,6 +119,19 @@ data_movement = [
         bullets: [
             "If you move while grappling another creature, your speed is halved, unless the creature is two or more sizes smaller than you.",
             "See the attack action for how to grapple a creature."
+        ]
+    },
+    {
+        title: "Moving Long jump (10' move first)",
+        icon: "wingfoot",
+        subtitle: "Cost: 5ft per 5ft, Dist: Str",
+        description: "Movement cost: 5ft per 5ft jumped",
+        reference: "PHB, pg. 182.",
+        bullets: [
+            "You cover a number of feet up to your <b>Strength score</b> if you move at least 10 feet on foot immediately before the jump.",
+            "When you make a standing long jump, you can leap only half that distance",
+            "May involve a DC 10 Strength (Athletics) check to clear a low obstacle (no taller than a quarter of the jump's distance). You hit the obstacle on a failed check.",
+            "May involve a DC 10 Dexterity (Acrobatics) check to land on your feet in difficult terrain. You land prone on a failed check."
         ]
     }
 ]
